@@ -32,14 +32,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func LowerButton(_ sender: Any) {
-        if(value<1){
-            LowerButton.alpha = 0.5;
-            LowerButton.isEnabled = false;
-        }
-        
         if(value>0){
             value-=1;
             Value.text = value.description;
+        }
+        if(value<1){
+            LowerButton.alpha = 0.5;
+            LowerButton.isEnabled = false;
         }
     }
 }
