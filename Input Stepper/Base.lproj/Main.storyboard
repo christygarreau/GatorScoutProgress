@@ -37,6 +37,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pyC-CM-Wrn">
+                                <rect key="frame" x="73" y="458" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNW-c9-9uR">
+                                <rect key="frame" x="111" y="422" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -55,7 +66,9 @@
                     <connections>
                         <outlet property="AddBotton" destination="hBS-n5-qZL" id="48L-AI-Dvz"/>
                         <outlet property="LowerButton" destination="NF5-5W-DSD" id="erS-bU-jux"/>
+                        <outlet property="Slider" destination="pyC-CM-Wrn" id="99Y-3m-KXM"/>
                         <outlet property="Value" destination="cqX-FL-VmH" id="xfa-72-dd3"/>
+                        <outlet property="sliderName" destination="rNW-c9-9uR" id="6FR-A3-NmZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
