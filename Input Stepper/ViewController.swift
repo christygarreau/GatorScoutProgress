@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var Slider: UISlider!
     @IBOutlet weak var sliderName: UILabel!
     var value = 0;
-    var sliderState = "";
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +23,9 @@ class ViewController: UIViewController {
         LowerButton.alpha = 0.5;
         LowerButton.isEnabled = false;
         Slider.minimumValue = 0;
-        Slider.maximumValue = 5;
-        sliderName.text = sliderState;
+        Slider.maximumValue = 4;
+        Slider.value = 2;
+        sliderName.text = "OK";
     }
 
     @IBAction func AddButton(_ sender: Any) {
@@ -47,9 +47,18 @@ class ViewController: UIViewController {
             LowerButton.isEnabled = false;
         }
     }
-    @IBAction func Slider(_ sender: Any) {
+    @IBAction func Slide(_ sender: UISlider) {
+        Slider.value.round()
         if(Slider.value == 0){
             sliderName.text = "Bad";
+        } else if(Slider.value == 1){
+            sliderName.text = "Eh";
+        } else if(Slider.value == 2){
+            sliderName.text = "Ok";
+        } else if(Slider.value == 3){
+            sliderName.text = "Good";
+        } else {
+            sliderName.text = "Great";
         }
     }
 }
